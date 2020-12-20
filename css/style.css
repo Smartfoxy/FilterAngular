@@ -1,0 +1,128 @@
+.header {
+    min-height: 100px;
+  }
+  .header h1 {
+    color: #1b1b9b;
+  }
+  
+  .footer {
+    min-height: 70px;
+  }
+  
+  .main {
+    min-height: calc(100vh - 100px -70px);
+  }
+  
+  .card {
+    width: 25%;
+    min-width: 200px;
+  }
+  .card-body h6 {
+    height: 40px;
+    overflow: hidden;
+  }
+  .card-text {
+    height: 100px;
+    overflow: hidden;
+  }
+  .card .btn-primary {
+    padding: 20px;
+    align-self: center;
+    background-color: transparent;
+    background-image: url("https://feerverk.net/img/basket.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .card span {
+    font-size: 1.3em;
+  }
+  .card img {
+    width: 100%;
+    height: 150px;
+  }
+  
+  .priceFilter .btn-primary {
+    align-self: center;
+  }
+  
+  a:hover,
+  a {
+    text-decoration: none;
+  }
+  
+  .aside {
+    flex: 0 0 240px;
+    padding: 7px;
+  }
+  
+  .filter_item label {
+    cursor: pointer;
+  }
+  .filter_item:hover {
+    background-color: #e7e1e1;
+    color: blue;
+  }
+  .filter_item:hover label::before {
+    border: 2px solid blue;
+  }
+  
+  legend {
+    font-size: 1em;
+  }
+  
+  .filters_checked span {
+    position: relative;
+    color: #1b1b9b;
+    border: 1px solid #1b1b9b;
+    cursor: pointer;
+  }
+  .filters_checked span::after {
+    content: "x";
+    position: absolute;
+    color: red;
+    font-weight: 600;
+    font-size: 1.6em;
+    top: -10px;
+    right: 13px;
+  }
+  .filters_checked span:hover {
+    background: lightskyblue;
+  }
+  
+  span.reset {
+    background: #dbd5d5;
+  }
+  
+  label {
+    width: 100%;
+  }
+  
+  .price_checked {
+    align-self: flex-start;
+    width: 270px;
+    margin-right: 0;
+  }
+  
+  .page {
+    align-self: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-color: linen;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .page:hover {
+    color: red;
+    border: 2px solid #1b1b9b;
+  }
+  .page.active {
+    border: 2px solid #1b1b9b;
+  }
+  
+  .items_count span {
+    color: red;
+    margin: 0 10px;
+  }

@@ -1,0 +1,134 @@
+$primary-color: rgb(27, 27, 155);
+$second-color: blue;
+$header-height: 100px;
+$footer-height: 70px;
+
+.header{
+    min-height: $header-height;
+
+    h1 {
+        color: $primary-color;
+    }
+}
+.footer{
+    min-height: 70px;
+}
+.main {
+    min-height: calc(100vh - #{$header-height} -#{$footer-height}); 
+}
+.card {
+    width: 25%;
+    min-width: 200px;
+
+    &-body h6{
+        height: 40px;
+        overflow: hidden;
+    }
+
+    &-text {
+        height: 100px;
+        overflow: hidden;
+    }
+
+    & .btn-primary {
+        padding: 20px;
+        align-self: center;
+        background-color: transparent;
+        background-image: url("https://feerverk.net/img/basket.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    & span {
+        font-size: 1.3em;
+    }
+    & img {
+        width: 100%;
+        height: 150px;
+    }
+}
+.priceFilter .btn-primary {
+    align-self: center;
+}
+a:hover,
+a {
+    text-decoration: none;
+}
+
+.aside {
+    flex: 0 0 240px;
+    padding: 7px;
+}
+
+.filter_item {
+    label{
+        cursor: pointer;
+    }
+    &:hover {
+        background-color: rgb(231, 225, 225);
+        color: $second-color;
+
+        label::before {
+            border: 2px solid $second-color;
+        }
+    }
+}
+
+legend {
+    font-size: 1em;
+}
+
+.filters_checked span {
+    position: relative;
+    color: rgb(27, 27, 155);
+    border: 1px solid $primary-color;
+    cursor: pointer;
+
+    &::after {
+        content: 'x';
+        position: absolute;
+        color:red;
+        font-weight: 600;
+        font-size: 1.6em;
+        top: -10px;
+        right: 13px;
+    }
+    &:hover {
+        background: lightskyblue;
+    }
+}
+
+span.reset {
+    background: rgb(219, 213, 213);
+}
+label {
+    width: 100%;
+}
+.price_checked {
+    align-self: flex-start;
+    width: 270px;
+    margin-right: 0;
+}
+.page {
+    align-self: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-color: linen;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+
+    &:hover {
+        color: red;
+        border: 2px solid $primary-color;
+    }
+    &.active {
+        border: 2px solid $primary-color;
+    }
+}
+
+.items_count span {
+    color: red;
+    margin: 0 10px;
+}
